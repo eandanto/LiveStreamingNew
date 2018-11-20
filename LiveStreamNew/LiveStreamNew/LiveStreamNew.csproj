@@ -326,6 +326,7 @@
     <Content Include="Resources\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
     <Content Include="Resources\fonts\poppins\Poppins-Thin.ttf" />
     <Content Include="Resources\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

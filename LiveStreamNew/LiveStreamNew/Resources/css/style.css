@@ -108,6 +108,15 @@ p {
     color: #d6619c;
 }
 
+.btn-login {
+    color:black;
+    border-color:black;
+}
+
+    .btn-login:hover {
+        border-color: black;
+    }
+
 .input-search-main {
     background-image: -moz-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
     background-image: -webkit-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);

@@ -1,14 +1,3 @@
-/*
-
-Style   : MobApp Script JS
-Version : 1.0
-Author  : Surjith S M
-URI     : https://surjithctly.in/
-
-Copyright © All rights Reserved 
-
-*/
-
 $(function() {
     "use strict";
 
@@ -20,12 +9,45 @@ $(function() {
     /*-----------------------------------
      * FIXED  MENU - HEADER
      *-----------------------------------*/
+    
     function menuscroll() {
-        var $navmenu = $('.nav-menu');
-        if ($(window).scrollTop() > 50) {
-            $navmenu.addClass('is-scrolling');
-        } else {
-            $navmenu.removeClass("is-scrolling");
+        if ($("#determiner").val() == "others") {
+            var $navmenu = $('.nav-menu');
+            if ($(window).scrollTop() > 50) {
+                $navmenu.addClass('is-scrolling');
+                $("#nav-home").removeClass("text-black");
+                $("#nav-rooms").removeClass("text-black");
+                $("#nav-leaderboard").removeClass("text-black");
+                $("#nav-store").removeClass("text-black");
+                $("#nav-forum").removeClass("text-black");
+                $("#btnLogin").removeClass("btn-login");
+                $("#nav-home").addClass("text-white");
+                $("#nav-rooms").addClass("text-white");
+                $("#nav-leaderboard").addClass("text-white");
+                $("#nav-store").addClass("text-white");
+                $("#nav-forum").addClass("text-white");
+            } else {
+                $navmenu.removeClass("is-scrolling");
+                $("#nav-home").removeClass("text-white");
+                $("#nav-rooms").removeClass("text-white");
+                $("#nav-leaderboard").removeClass("text-white");
+                $("#nav-store").removeClass("text-white");
+                $("#nav-forum").removeClass("text-white");
+                $("#nav-home").addClass("text-black");
+                $("#nav-rooms").addClass("text-black");
+                $("#nav-leaderboard").addClass("text-black");
+                $("#nav-store").addClass("text-black");
+                $("#nav-forum").addClass("text-black");
+                $("#btnLogin").addClass("btn-login");
+            }
+        }
+        else {
+            var $navmenu = $('.nav-menu');
+            if ($(window).scrollTop() > 50) {
+                $navmenu.addClass('is-scrolling');
+            } else {
+                $navmenu.removeClass("is-scrolling");
+            }
         }
     }
     menuscroll();
