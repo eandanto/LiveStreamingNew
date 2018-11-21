@@ -12,9 +12,8 @@ $(function() {
     
     function menuscroll() {
         if ($("#determiner").val() == "others") {
-            var $navmenu = $('.nav-menu');
             if ($(window).scrollTop() > 50) {
-                $navmenu.addClass('is-scrolling');
+                $('.nav-menu').addClass('is-scrolling');
                 $("#nav-home").removeClass("text-black");
                 $("#nav-rooms").removeClass("text-black");
                 $("#nav-leaderboard").removeClass("text-black");
@@ -27,26 +26,27 @@ $(function() {
                 $("#nav-store").addClass("text-white");
                 $("#nav-forum").addClass("text-white");
             } else {
-                $navmenu.removeClass("is-scrolling");
-                $("#nav-home").removeClass("text-white");
-                $("#nav-rooms").removeClass("text-white");
-                $("#nav-leaderboard").removeClass("text-white");
-                $("#nav-store").removeClass("text-white");
-                $("#nav-forum").removeClass("text-white");
-                $("#nav-home").addClass("text-black");
-                $("#nav-rooms").addClass("text-black");
-                $("#nav-leaderboard").addClass("text-black");
-                $("#nav-store").addClass("text-black");
-                $("#nav-forum").addClass("text-black");
-                $("#btnLogin").addClass("btn-login");
+                if (!$('#navbar').parents('.nav-menu').hasClass('menu-is-open')) {
+                    $('.nav-menu').removeClass("is-scrolling");
+                    $("#nav-home").removeClass("text-white");
+                    $("#nav-rooms").removeClass("text-white");
+                    $("#nav-leaderboard").removeClass("text-white");
+                    $("#nav-store").removeClass("text-white");
+                    $("#nav-forum").removeClass("text-white");
+                    $("#nav-home").addClass("text-black");
+                    $("#nav-rooms").addClass("text-black");
+                    $("#nav-leaderboard").addClass("text-black");
+                    $("#nav-store").addClass("text-black");
+                    $("#nav-forum").addClass("text-black");
+                    $("#btnLogin").addClass("btn-login");
+                }
             }
         }
         else {
-            var $navmenu = $('.nav-menu');
             if ($(window).scrollTop() > 50) {
-                $navmenu.addClass('is-scrolling');
+                $('.nav-menu').addClass('is-scrolling');
             } else {
-                $navmenu.removeClass("is-scrolling");
+                $('.nav-menu').removeClass("is-scrolling");
             }
         }
     }
@@ -64,13 +64,46 @@ $(function() {
     /* 
      * NAVBAR TOGGLE BG
      *-----------------*/
-    var siteNav = $('#navbar');
-    siteNav.on('show.bs.collapse', function(e) {
-        $(this).parents('.nav-menu').addClass('menu-is-open');
-    })
-    siteNav.on('hide.bs.collapse', function(e) {
-        $(this).parents('.nav-menu').removeClass('menu-is-open');
-    })
+    if ($("#determiner").val() == "others") {
+        $('#navbar').on('show.bs.collapse', function (e) {
+            $(this).parents('.nav-menu').addClass('menu-is-open');
+            $("#nav-home").removeClass("text-black");
+            $("#nav-rooms").removeClass("text-black");
+            $("#nav-leaderboard").removeClass("text-black");
+            $("#nav-store").removeClass("text-black");
+            $("#nav-forum").removeClass("text-black");
+            $("#btnLogin").removeClass("btn-login");
+            $("#nav-home").addClass("text-white");
+            $("#nav-rooms").addClass("text-white");
+            $("#nav-leaderboard").addClass("text-white");
+            $("#nav-store").addClass("text-white");
+            $("#nav-forum").addClass("text-white");
+        })
+        $('#navbar').on('hide.bs.collapse', function (e) {
+            $(this).parents('.nav-menu').removeClass('menu-is-open');
+            $("#nav-home").removeClass("text-white");
+            $("#nav-rooms").removeClass("text-white");
+            $("#nav-leaderboard").removeClass("text-white");
+            $("#nav-store").removeClass("text-white");
+            $("#nav-forum").removeClass("text-white");
+            $("#nav-home").addClass("text-black");
+            $("#nav-rooms").addClass("text-black");
+            $("#nav-leaderboard").addClass("text-black");
+            $("#nav-store").addClass("text-black");
+            $("#nav-forum").addClass("text-black");
+            $("#btnLogin").addClass("btn-login");
+        })
+    }
+    else {
+        $('#navbar').on('show.bs.collapse', function (e) {
+            $(this).parents('.nav-menu').addClass('menu-is-open');
+        })
+        $('#navbar').on('hide.bs.collapse', function (e) {
+            $(this).parents('.nav-menu').removeClass('menu-is-open');
+        })
+    }
+
+    
 
 
     /*-----------------------------------

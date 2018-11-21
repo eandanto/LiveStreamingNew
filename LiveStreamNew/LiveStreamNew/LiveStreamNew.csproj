@@ -146,6 +146,7 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\LiveController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
@@ -176,6 +177,12 @@
     <Content Include="Resources\img\2.JPG" />
     <Content Include="Resources\img\3.jpg" />
     <Content Include="Resources\img\bg.jpeg" />
+    <Content Include="Resources\img\coin-1.png" />
+    <Content Include="Resources\img\coin-2.png" />
+    <Content Include="Resources\img\coin-3.png" />
+    <Content Include="Resources\img\coin-4.png" />
+    <Content Include="Resources\img\coin-5.png" />
+    <Content Include="Resources\img\coin-6.png" />
     <Content Include="Resources\img\have_fun.png" />
     <Content Include="Resources\img\icon_category_100.png" />
     <Content Include="Resources\img\icon_category_beauty.png" />
@@ -327,6 +334,7 @@
     <Content Include="Resources\fonts\poppins\Poppins-Thin.ttf" />
     <Content Include="Resources\fonts\poppins\Poppins-ThinItalic.ttf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Store\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

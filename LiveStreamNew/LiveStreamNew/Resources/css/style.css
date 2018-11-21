@@ -601,6 +601,7 @@ header {
 
 .card.pricing {
     border: 1px solid #f1eef1;
+    height:450px;
 }
 
     .card.pricing.popular {
@@ -675,6 +676,15 @@ header {
 .btn-light img {
     margin-right: 0.4rem;
     vertical-align: text-bottom;
+}
+
+.btn-grey {
+    background-color: grey;
+    border-color:grey;
+}
+
+.btn-grey:hover {
+    border-color: grey;
 }
 
 
