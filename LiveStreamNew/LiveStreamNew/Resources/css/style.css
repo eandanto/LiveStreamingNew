@@ -242,6 +242,39 @@ p {
     /*padding-bottom:25px;*/
 }
 
+.leaderboard-top-img {
+    width:125px;
+    border-radius:50%;
+}
+
+.leaderboard-top-text {
+    margin-top:10px;
+    display:block;
+    font-size:20px;
+}
+
+.leaderboard-img {
+    margin-left: 10px;
+    border-radius:50%;
+}
+
+.leaderboard-img-td {
+    padding-left:10px;
+    padding-bottom:20px;
+}
+
+.leaderboard-text {
+    padding-left:20px;
+}
+
+.leaderboard-header {
+    font-size:40px !important;
+}
+
+.width-100 {
+    width:100%;
+}
+
 /* NAVBAR
 ----------------------*/
 .nav-menu {
@@ -601,7 +634,6 @@ header {
 
 .card.pricing {
     border: 1px solid #f1eef1;
-    height:450px;
 }
 
     .card.pricing.popular {
@@ -685,6 +717,10 @@ header {
 
 .btn-grey:hover {
     border-color: grey;
+}
+
+.store-height {
+    height:450px;
 }
 
 
