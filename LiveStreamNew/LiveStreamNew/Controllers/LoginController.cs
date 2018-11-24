@@ -12,5 +12,15 @@ namespace LiveStreamNew.Controllers
         {
             return View();
         }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
     }
 }

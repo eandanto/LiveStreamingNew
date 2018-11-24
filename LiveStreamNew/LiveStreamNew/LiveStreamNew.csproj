@@ -340,6 +340,8 @@
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Store\Index.cshtml" />
     <Content Include="Views\Leaderboard\Index.cshtml" />
+    <Content Include="Views\Login\Register.cshtml" />
+    <Content Include="Views\Login\ForgotPassword.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
