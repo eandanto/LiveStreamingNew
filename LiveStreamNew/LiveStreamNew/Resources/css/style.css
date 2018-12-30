@@ -109,8 +109,8 @@ p {
 }
 
 .btn-login {
-    color:black;
-    border-color:black;
+    color: black;
+    border-color: black;
 }
 
     .btn-login:hover {
@@ -234,45 +234,45 @@ p {
 }
 
 .user-box {
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .banner {
-    margin-top:25px;
+    margin-top: 25px;
     /*padding-bottom:25px;*/
 }
 
 .leaderboard-top-img {
-    width:125px;
-    border-radius:50%;
+    width: 125px;
+    border-radius: 50%;
 }
 
 .leaderboard-top-text {
-    margin-top:10px;
-    display:block;
-    font-size:20px;
+    margin-top: 10px;
+    display: block;
+    font-size: 20px;
 }
 
 .leaderboard-img {
     margin-left: 10px;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 .leaderboard-img-td {
-    padding-left:10px;
-    padding-bottom:20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 .leaderboard-text {
-    padding-left:20px;
+    padding-left: 20px;
 }
 
 .leaderboard-header {
-    font-size:40px !important;
+    font-size: 40px !important;
 }
 
 .width-100 {
-    width:100%;
+    width: 100%;
 }
 
 /* NAVBAR
@@ -712,15 +712,15 @@ header {
 
 .btn-grey {
     background-color: grey;
-    border-color:grey;
-}
-
-.btn-grey:hover {
     border-color: grey;
 }
 
+    .btn-grey:hover {
+        border-color: grey;
+    }
+
 .store-height {
-    height:450px;
+    height: 450px;
 }
 
 
@@ -755,4 +755,37 @@ header {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+video {
+    --width: 45%;
+    width: var(--width);
+    height: calc(var(--width) * 0.75);
+    margin: 0 0 20px 0;
+    vertical-align: top;
+}
+
+    video#localVideo {
+        margin: 0 20px 20px 0;
+    }
+
+div.box {
+    margin: 1em;
+}
+
+@media screen and (max-width: 400px) {
+    button {
+        width: 83px;
+        margin: 0 11px 10px 0;
+    }
+
+    video {
+        height: 90px;
+        margin: 0 0 10px 0;
+        width: calc(50% - 7px);
+    }
+
+        video#localVideo {
+            margin: 0 10px 20px 0;
+        }
 }
